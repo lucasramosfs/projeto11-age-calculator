@@ -1,6 +1,6 @@
 # Exercício 11 | age-calculator
 
-## Aplicando tecnicas de Flexbox, grid, responsividade e javascript, alem de muito raciocinio para pensar em todas as posibilidades
+## Aplicando tecnicas de Flexbox, grid, responsividade e javascript, alem de muito raciocínio para pensar em todas as posibilidades
 
 Esse exercício já precisei dedicar um pouco mais mas foi uma experiência muito boa.
 
