@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+    <title>Frontend Mentor | Age calculator app</title>
+
+    <link rel="stylesheet" href="src/css/reset.css">
+    <link rel="stylesheet" href="src/css/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400;1,800&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+    <main class="main">
+        <ul class="calendario">
+            <li class="item-calendario">
+                <p class="data">DAY</p>
+
+                <input type="text" placeholder="DD" name="dia">
+
+                <p class="vazio">This field is required</p>
+                <p class="valido">Must be a valid day</p>
+                <p class="inexistente">Must be a valid date</p>
+
+            </li >
+            <li class="item-calendario">
+                <p class="data">MONTH</p>
+
+                <input type="text" placeholder="MM" name="mes">
+
+                <p class="vazio">This field is required</p>
+                <p class="valido">Must be a valid month</p>
+            </li>
+            <li class="item-calendario">
+                <p class="data">YEAR</p>
+
+                <input type="text" placeholder="YYYY" name="ano">
+
+                <p class="vazio">This field is required</p>
+                <p class="valido">Must be in the past</p>
+            </li>
+        </ul>
+
+        <div class="linha">
+            <img id="botao" src="src/images/icon-arrow.svg" alt="imagem seta para baixo de ação">
+        </div>
+
+        <ul class="resposta">
+            <li class="item-resposta">
+
+                <h1 class="campo anos"> <span>- -</span> years</h1>
+
+            </li>
+            <li class="item-resposta">
+
+                <h1 class="campo meses"> <span>- -</span> months</h1>
+
+            </li>
+            <li class="item-resposta">
+
+                <h1 class="campo dias"> <span>- -</span> days</h1>
+
+            </li>
+        </ul>
+    </main>
+  
+    <script src="src/js/index.js"></script>
+</body>
+</html>

@@ -1,0 +1,229 @@
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: hsl(0, 0%, 94%);
+    height: 100vh;
+}
+
+.main{
+    width: 845px;
+    height: 655px;
+    background-color: hsl(0, 0%, 100%);
+    border-radius:30px 30px 200px 30px ;
+}
+
+.calendario{
+    display: flex;
+    padding-left: 55px;
+    padding-top: 51px;
+}
+
+.calendario .item-calendario .data{
+    margin-bottom: 7px;
+    font-size: 1.5rem;
+    font-weight: 400;
+    letter-spacing: 3px;
+    color: hsl(0, 1%, 44%);
+
+}
+
+.calendario .item-calendario input{
+    height: 72px;
+    width: 160px;
+    border: 1px solid hsl(0, 0%, 86%);
+    border-radius: 7px;
+    margin-right: 32px;
+    padding-left: 23px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 3.3rem;
+}
+
+.calendario .item-calendario input:hover{
+    border-color: hsl(259, 100%, 65%);
+    cursor: pointer;
+}
+
+.calendario .item-calendario p:nth-child(n+2):nth-child(-n+5){
+    display: none;
+    margin-top: 10px;
+    font-size: 1.4rem;
+    font-style: italic;
+    font-weight: 400;
+}
+
+
+.main .calendario .item-calendario.vazio .vazio, .main .calendario .item-calendario.vazio .data{
+    color: hsl(0, 100%, 67%);
+    display: block;
+}
+
+.main .calendario .item-calendario.vazio input{
+    border: 1px solid hsl(0, 100%, 67%);
+}
+
+.main .calendario .item-calendario.valido .valido, .main .calendario .item-calendario.valido .data{
+    color: hsl(0, 100%, 67%);
+    display: block;
+}
+
+.main .calendario .item-calendario.valido input{
+    border: 1px solid hsl(0, 100%, 67%);
+}
+
+
+.main .calendario .item-calendario.inexistente .inexistente, .main .calendario .item-calendario.inexistente .data{
+    color: hsl(0, 100%, 67%);
+    display: block;
+}
+
+.main .calendario .item-calendario.inexistente input{
+    border: 1px solid hsl(0, 100%, 67%);
+}
+
+
+.main .linha{
+    margin-top: 50px;
+    margin-left: 55px;
+    height: 1px;
+    background-color: hsl(0, 0%, 86%) ;
+    width: 75%;
+    position: relative;
+}
+
+.main .linha img{
+    background-color: hsl(259, 100%, 65%);
+    position: absolute;
+    right: -95px;
+    top: -50px;
+    padding: 25px;
+    text-align: center;
+    border-radius: 50%;
+}
+
+
+.main .linha img:hover{
+    background-color: hsl(0, 0%, 8%);
+    cursor: pointer;
+
+}
+
+.resposta{
+    height: 450px;
+    padding-top: 25px;
+}
+
+
+.resposta .item-resposta{
+    display: flex;
+    font-size: 5rem;
+    font-style: italic;
+    font-weight: 800;
+    margin-left: 53px;
+    margin-bottom: -35px;
+    word-spacing: -5px;
+}
+
+.resposta .item-resposta .campo span{
+    color: hsl(259, 100%, 65%);
+}
+
+
+@media(max-width:850px){
+    .main{
+        width: 450px;
+        height: 550px;
+        border-radius:30px 30px 150px 30px ;
+    }
+    .calendario .item-calendario .data{
+        font-size: 1.3rem;
+        letter-spacing: 3px;
+    }
+    .calendario .item-calendario input{
+        height: 52px;
+        width: 85px;
+        padding-left: 10px;
+        font-weight: 400;
+        font-size: 2rem;
+    }
+
+    .calendario .item-calendario p:nth-child(n+2):nth-child(-n+5){
+        display: none;
+        margin-top: 7px;
+        font-size: 1rem;
+        font-style: italic;
+        font-weight: 400;
+    }
+
+    .main .linha img{
+        right: 120px;
+        top: -35px;
+        padding: 15px;
+    }
+    .main .linha{
+        width: 71%;
+    }
+
+    .resposta{
+        height: 330px;
+        padding-top: 60px;
+    }
+
+    .resposta .item-resposta{
+        font-size: 3rem;
+        padding-bottom: 30px;
+    }
+    
+   
+}
+
+@media(max-width:460px){
+    .main{
+        width: 320px;
+        height: 440px;
+        border-radius:30px 30px 120px 30px ;
+    }
+    .calendario{
+        padding-left: 25px;
+        padding-top: 40px;
+    }
+    .calendario .item-calendario .data{
+        font-size: 1rem;
+    }
+    .calendario .item-calendario input{
+        height: 52px;
+        width: 85px;
+        margin-right: 10px;
+        padding-left: 10px;
+        font-weight: 400;
+        font-size: 2rem;
+    }
+
+    .calendario .item-calendario p:nth-child(n+2):nth-child(-n+5){
+        font-size: 0.8rem;
+    }
+
+    .main .linha img{
+        right: 100px;
+        top: -32px;
+        padding: 12px;
+    }
+    .main .linha{
+        margin-left: 25px;
+        width: 85%;
+    }
+
+    .resposta{
+        height: 330px;
+        padding-top: 50px;
+    }
+
+    .resposta .item-resposta{
+        font-size: 2.3rem;
+        padding-bottom: 35px;
+        margin-left: 25px;
+    }
+    
+   
+}
